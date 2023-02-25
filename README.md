@@ -16,8 +16,10 @@ To run this project, you need to have the following installed:
 git clone https://github.com/your_username/chatbot-vuejs-fastapi.git
 
 2. Navigate to the `frontend` directory and install the dependencies.
-cd chatbot-vuejs-fastapi/frontend
-npm install
+
+`cd chatbot-vuejs-fastapi/frontend`
+
+`npm install`
 
 3. Navigate to the `backend` directory and create a virtual environment.
 
@@ -28,9 +30,11 @@ npm install
 4. Activate the virtual environment.
 
 On macOS and Linux:
+
 `source env/bin/activate`
 
 On Windows:
+
 `.\env\Scripts\activate`
 
 5. Install the Python dependencies.
