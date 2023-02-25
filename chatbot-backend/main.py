@@ -62,7 +62,11 @@ async def scrape_article(request: Request):
     save_article(url, article_text)
     return PlainTextResponse(content=article_text)
 
-@app.post('/search')
+@app.get('/search')
 async def search(request: Request, q: str):
     results = search_articles(q)
-    return templates.TemplateResponse('results.html', {'request': request, 'results': results})
+
+     # Return a list of search results as a JSON response
+    return [{'id': result.id} for result in results]
+
+    # return templates.TemplateResponse('results.html', {'request': request, 'results': results})
