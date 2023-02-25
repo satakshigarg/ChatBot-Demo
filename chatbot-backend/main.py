@@ -68,5 +68,3 @@ async def search(request: Request, q: str):
 
      # Return a list of search results as a JSON response
     return [{'id': result.id} for result in results]
-
-    # return templates.TemplateResponse('results.html', {'request': request, 'results': results})
