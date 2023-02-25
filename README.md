@@ -21,19 +21,20 @@ npm install
 
 3. Navigate to the `backend` directory and create a virtual environment.
 
-cd ../backend
-python3 -m venv env
+`cd ../backend`
+
+`python3 -m venv env`
 
 4. Activate the virtual environment.
 
 On macOS and Linux:
-source env/bin/activate
+`source env/bin/activate`
 
 On Windows:
-.\env\Scripts\activate
+`.\env\Scripts\activate`
 
 5. Install the Python dependencies.
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 6. (Optional) Set up a Supabase project for text search.
 
@@ -44,11 +45,11 @@ If you want to use Supabase for text search, you need to set up a Supabase proje
 If you don't want to use Supabase for text search, you can set up a Postgres database and create a table with the name `articles` and a full-text search column with the name `content`. You also need to set the database URL in the `backend/.env` file. See the `.env.example` file for an example.
 
 8. Start the backend server.
-uvicorn main:app --reload
+`uvicorn main:app --reload`
 
 9. Start the frontend server.
-cd ../frontend
-npm run serve
+`cd ../frontend`
+`npm run serve`
 
 10. Open http://localhost:8080/ in your browser.
 
